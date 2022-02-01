@@ -1,9 +1,7 @@
-import FooterOverlay from '.Footer/FooterOverlay';
 import Navbar from './Navbar/Navbar';
-import Calendar from './Calendar';
+import EventCalendar from './Calendar/Calendar';
 
 export {
     Navbar,
-    FooterOverlay,
-    Calendar
+    EventCalendar
 };

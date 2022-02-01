@@ -26,7 +26,7 @@ import shigezoFoodSushi from '../assets/shigezocarousel1.jpg';
 import shigezoFoodBeef from '../assets/shigezocarousel2.jpg';
 import shigezoFoodIzakaya from '../assets/shigezocarousel3.jpg';
 import shigezoFoodGyoza from '../assets/shigezocarousel4.jpg';
-import shigezoFood from '../assets/shigezofood1.jpg';
+import shigezoFood from '../assets/Shigezofood1.jpg';
 import shigezoMenu from '../assets/ShigezoMenu.png';
 import southparkRestaurantBar from '../assets/southparkbar.jpeg';
 import southparkRestaurantBarBottles from '../assets/southparkmedium.jpeg';
@@ -41,7 +41,7 @@ import stonecliffRestaurantPatio from "../assets/stonecliffback.jpg";
 import stonecliffRestaurantBar from "../assets/stonecliffbar.jpg";
 import stonecliffRestaurantDiners from "../assets/StoneCliff395.jpg";
 import stonecliffRestaurantUpstairs from "../assets/stonecliffupstairs.jpg";
-import stonecliffFoodFish from "../assets/Stone_cliff_fishfood.jpg";
+import stonecliffFoodFish from "../assets/Stone_Cliff_fishfood.jpg";
 import stonecliffFoodPlate from "../assets/Stone_Cliff_foodplate.jpg";
 import stonecliffFoodDish from "../assets/StonecliffFood1.jpg";
 import stonecliffFoodPasta from "../assets/stonecliffFood2.jpg";
@@ -54,7 +54,7 @@ import outsideEvent from "../assets/stonecliffevent.jpg";
 import peopleDining from "../assets/southparkpeopledining.jpeg";
 import nwrcLogo from '../assets/nwreslogo.svg';
 
-export default {
+const Images = {
     defuegoRestaurant,
     defuegoRestaurantWhiskey,
     defuegofRestaurantPool,
@@ -111,3 +111,5 @@ export default {
     peopleDining,
     nwrcLogo
 };
+
+export default Images;
