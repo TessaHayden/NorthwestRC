@@ -10,7 +10,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 const locales = {
-    "en-US": requestAnimationFrame("date-fns/locale/en-US")
+    "en-US": require("date-fns/locale/en-US")
 };
 
 const localizer = dateFnsLocalizer({
