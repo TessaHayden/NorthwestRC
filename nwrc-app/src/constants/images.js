@@ -53,6 +53,7 @@ import champagne from "../assets/eoladrinks.jpg";
 import outsideEvent from "../assets/stonecliffevent.jpg";
 import peopleDining from "../assets/southparkpeopledining.jpeg";
 import nwrcLogo from '../assets/nwreslogo.svg';
+import arrow from '../assets/arrow.svg';
 
 const Images = {
     defuegoRestaurant,
@@ -109,7 +110,8 @@ const Images = {
     champagne,
     outsideEvent,
     peopleDining,
-    nwrcLogo
+    nwrcLogo,
+    arrow
 };
 
 export default Images;
