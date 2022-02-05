@@ -6,10 +6,11 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = React.useState(false);
+
     return (
-        <nav className="app__navbar">
+        <nav className="app__navbar" id="main">
             <div className="app__navbar-logo">
-                <img src={images.nwrcLogo} alt="logo" />
+               <a href="#home"> <img src={images.nwrcLogo} alt="logo" /></a>
             </div>
             <ul className="app__navbar-links">
                 <li className="p__opensans"><a href="#home">Home</a></li>

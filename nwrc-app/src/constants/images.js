@@ -54,6 +54,7 @@ import outsideEvent from "../assets/stonecliffevent.jpg";
 import peopleDining from "../assets/southparkpeopledining.jpeg";
 import nwrcLogo from '../assets/nwreslogo.svg';
 import arrow from '../assets/arrow.svg';
+import blueprint from '../assets/Bacchusblueprint.png';
 
 const Images = {
     defuegoRestaurant,
@@ -111,7 +112,8 @@ const Images = {
     outsideEvent,
     peopleDining,
     nwrcLogo,
-    arrow
+    arrow,
+    blueprint
 };
 
 export default Images;
