@@ -1,43 +1,49 @@
-const RESTAURANTS = [
-    {
-        "id": 0,
-        "name": "de Fuego",
-        "description": "South American inspired cuisine.",
-        "website": "https://www.defuegogrille.com"
-    },
-    {
-        "id": 1,
-        "name": "Hayden's Lakefront Grill",
-        "description": "Family friendly casual fine dining.",
-        "website": "https://www.haydensgrill.com"
-    },
-    {
-        "id": 2,
-        "name": "Stone Cliff Inn",
-        "description": "A rustic inn and restaurant on the Clackamas River.",
-        "website": "https://www.stonecliffinn.com"
-    },
-    {
-        "id": 3,
-        "name": "Shigezo Izakaya",
-        "description": "Japanese izakaya and sushi in the heart of Downtown Portland.",
-        "website": "https://www.shigezo-pdx.com"
-    },
-    {
-        "id": 4,
-        "name": "Soutpark Seafood Grill",
-        "description": "High quality seafood restaurant.",
-        "website": "https://soutparkseafood.com"
-    },
-    {
-        "id": 5,
-        "name": "Le Chon",
-        "description": "South American tapas in Downtown Portland.",
-        "website": "https://lechonpdx.com"
-    }
+const restaurants = [
+  {
+    id: 0,
+    name: "de Fuego",
+    description: "South American inspired cuisine.",
+    website: "https://www.defuegogrille.com",
+    image: "../assets/defuegocarousel.jpg",
+  },
+  {
+    id: 1,
+    name: "Hayden's Lakefront Grill",
+    description: "Family friendly casual fine dining.",
+    website: "https://www.haydensgrill.com",
+    image: "../assets/HaydenslakeSz.jpg",
+  },
+  {
+    id: 2,
+    name: "Stone Cliff Inn",
+    description: "Rustic inn & restaurant ",
+    website: "https://www.stonecliffinn.com",
+    image: "../assets/stonecliffSz.jpg",
+  },
+  {
+    id: 3,
+    name: "Shigezo Izakaya",
+    description: "Japanese izakaya & sushi",
+    website: "https://www.shigezo-pdx.com",
+    image: "../assets/shigezooutside.png",
+  },
+  {
+    id: 4,
+    name: "Soutpark Seafood Grill",
+    description: "High quality seafood",
+    website: "https://soutparkseafood.com",
+    image: "../assets/southparkSz.jpeg",
+  },
+  {
+    id: 5,
+    name: "Le Chon",
+    description: "South American tapas in Downtown Portland.",
+    website: "https://lechonpdx.com",
+    image: "../assets/lechonoutside.jpg",
+  },
 ];
 
-const SERVICES = [
+const services = [
   {
     id: 0,
     title: "Developing new projects",
@@ -98,7 +104,7 @@ const SERVICES = [
   },
 ];
 
-const ALLRESTAURANTS = [
+const all_restaurants = [
   {
     id: 6,
     featured: false,
@@ -545,4 +551,6 @@ const ALLRESTAURANTS = [
     name: "Liquor Store & Art Gallery Bar",
   },
 ];
+
+export default {restaurants, services, all_restaurants};
 
