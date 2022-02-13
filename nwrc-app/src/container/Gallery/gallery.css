@@ -10,14 +10,14 @@
 
 .panel {
     background: '#fff';
-    box-shadow: inse 0 0 0 5px rgba(255, 255, 255, 0.1);
-    color: var(--color-golden);
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .1);
+    color: rgb(102, 208, 250);
     text-align: center;
     align-items: center;
     transition:
         font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
-    font-size: 20px;
+        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);  
+    font-size: 18px;
     background-size: cover;
     background-position: center;
     flex: 1;
@@ -26,12 +26,12 @@
     flex-direction: column;
 }
 
-.panel1 {background-image: url(../../assets/defuegocarousel.jpg);}
-.panel2 {background-image: url(../../assets/HaydenslakeSz.jpg);}
-.panel3 {background-image: url(../../assets/lechonoutside.jpg);}
-.panel4 {background-image: url(../../assets/shigezooutside.png);}
-.panel5 {background-image: url(../../assets/southparkSz.jpeg);}
-.panel6 {background-image: url(../../assets/stonecliffSz.jpg);}
+.panel0 {background-image: url(../../assets/defuegocarousel.jpg);}
+.panel1 {background-image: url(../../assets/HaydenslakeSz.jpg);}
+.panel2 {background-image: url(../../assets/stonecliffSz.jpg);}
+.panel3 {background-image: url(../../assets/shigezooutside.png);}
+.panel4 {background-image: url(../../assets/southparkSz.jpeg);}
+.panel5 {background-image: url(../../assets/lechonoutside.jpg);}
 
 .panel > * {
     margin: 0;
@@ -44,13 +44,14 @@
 }
 
 .panel > *:first-child {transform: translateY(-100%);}
-.panel.open-active > *:first-child {transform: translateY(0); }
+.panel.open-active > *:first-child {transform: translateY(0); font-size: 30px;}
 .panel > *:last-child { transform: translateY(100%); }
-.panel.open-active > *:last-child {transform: translateY(0); }
+.panel.open-active > *:last-child {transform: translateY(0); font-size: 30px;}
 
 .panel p {
     text-transform: uppercase;
-    
+    text-shadow: 5 5 10px rgba(0, 0, 0, 0.9);
+    display: flex;
 }
 
 .panel p:nth-child(2) {
