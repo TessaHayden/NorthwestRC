@@ -1,0 +1,6 @@
+@media screen and (max-width: 250px) {
+    .app__wrapper {
+        padding: 2rem;
+        overflow-wrap: break-word;
+    }
+}

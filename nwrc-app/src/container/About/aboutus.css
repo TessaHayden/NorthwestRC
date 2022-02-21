@@ -1,18 +1,32 @@
-.word-enlargment {
-    font-size: 26px;
-}
-
 .btn {
-    color: blue;
+  color: blue;
+}
+.app__aboutus-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.arrow__img {
-    width: 300px;
+@media screen and (max-width: 2000px) {
+
+  .app__aboutus-overlay {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .app__aboutus-overlay img {
+    width: 400px;
+    height: 350px;
+  }
 }
 
 
-.app__aboutus-overlay img {
-    width: 391px;
-    margin: 0 0 8rem
-   
+@media screen and (max-width: 280px) {
+
+  .app__aboutus-overlay img {
+    max-width: 260px;
+    height: 220px;
+    margin: 3rem 2rem 0 0;
+    padding-right: 3rem;
+  }
 }
