@@ -1,0 +1,26 @@
+.app__wrapper_content-form div {
+    margin: 1rem;  
+}
+
+.app__wrapper_content-form label {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.app__wrapper_content-form input {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .4rem;
+}
+
+.app__wrapper_content-form textarea {
+    margin-top: .4rem;
+}
+
+button {
+    padding: .3rem;
+    font-size: 1rem;
+    background-color: var(--color-golden);
+    box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, .3);
+}
+

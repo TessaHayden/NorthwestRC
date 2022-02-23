@@ -81,6 +81,17 @@
   font-size: 40px;
 }
 
+.app__wrapper-subheading {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.app__wrapper-subheading img {
+  display: flex;
+  margin-bottom: 3rem;
+  width: 35%;
+}
+
 @media screen and (max-width: 600px) {
     .panel p {
     font-size: 1rem;

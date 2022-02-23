@@ -1,3 +1,7 @@
+.app__wrapper_services img {
+    width: 51%;
+}
+
 @media screen and (max-width: 250px) {
     .app__wrapper {
         padding: 2rem;
