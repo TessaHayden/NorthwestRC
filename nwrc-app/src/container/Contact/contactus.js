@@ -34,15 +34,12 @@ const ContactUs = () => {
           </h1>
           <div className="app__wrapper-content">
             <p className="p__opensans">
-                <a role="button" className="btn btn-link a-link" href="mailto: billhayden@live.com">Email us</a>
-            </p>
-            <p className="p__opensans">
               <a
                 role="button"
                 className="btn btn-link a-link"
                 href="tel:+15033497151"
               >
-                Call us
+                Call us today
               </a>
             </p>
           </div>

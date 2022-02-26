@@ -5,6 +5,7 @@
 .app__wrapper_content-form label {
     display: flex;
     justify-content: flex-start;
+    align-items: baseline;
 }
 
 .app__wrapper_content-form input {
@@ -18,9 +19,13 @@
 }
 
 button {
+    margin-left: 1.2em;
     padding: .3rem;
     font-size: 1rem;
     background-color: var(--color-golden);
     box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, .3);
 }
 
+.app__wrapper-content p {
+    padding-left: .9em;
+}
