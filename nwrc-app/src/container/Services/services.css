@@ -1,10 +1,16 @@
-.app__wrapper_services img {
-    width: 51%;
-}
 
-@media screen and (max-width: 250px) {
+
+@media screen and (max-width: 280px) {
     .app__wrapper {
         padding: 2rem;
         overflow-wrap: break-word;
+    }
+    .app__wrapper_services h1 {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .app__wrapper_services img {
+        margin-top: 0;
+        width: 95%;
     }
 }

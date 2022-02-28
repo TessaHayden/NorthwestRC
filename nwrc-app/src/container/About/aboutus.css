@@ -1,44 +1,49 @@
 .btn {
   color: blue;
 }
-.app__aboutus-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+
+.app__aboutus {
+  margin-bottom: 5rem;
 }
+.app__aboutus-overlay img {
+  display: flex;
+  float: left;
+  margin: 0 1.7rem 0 0;
+}
+.app__aboutus-content-about img {
+  width: 30%;
+}
+
 
 @media screen and (max-width: 2000px) {
   .app__aboutus-overlay {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .app__aboutus-overlay img {
-    width: 400px;
-    height: 350px;
-    justify-content: flex-start;
-    align-items: flex-start;
+  .app__aboutus-overlay img  {
+    width: 420px;
+    height: 330px;
   }
 }
 
-.app__aboutus-content-about img {
-  width: 30%;
-}
-
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 850px) {
   .app__aboutus-overlay img {
-    width: 400px;
-    height: 350px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 70%;
+    height: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .app__aboutus-overlay img {
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 280px) {
   .app__aboutus-overlay img {
-    max-width: 260px;
-    height: 220px;
-    margin: 3rem 2rem 0 0;
-    padding-right: 3rem;
+    width: 40%;
+    height: 40%;
+  }
+  .app__aboutus-content-about img {
+    width: 80%;
   }
 }

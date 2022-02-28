@@ -8,7 +8,7 @@ const Services = () => (
     <div className="app__wrapper_services flex__center section__padding">
       <h1 className="headtext__cormorant">
         Services</h1>
-      <img src={images.arrow} alt="about__arrow" />
+      <img src={images.arrow} alt="about__arrow" width="350" height="100" />
       <div className="app__wrapper-content">
         <p className="p__opensans">Services provided:</p>
         <p
