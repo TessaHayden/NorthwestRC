@@ -1,21 +1,31 @@
 .app__wrapper_content-form div {
-    margin: 1rem;  
+    margin: 1rem;
 }
 
-.app__wrapper_content-form label {
+label {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    font-size: 1.3rem;
+    color: var(--color-gray);
 }
 
-.app__wrapper_content-form input {
+input {
     display: flex;
     justify-content: flex-end;
-    margin-top: .4rem;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.app__wrapper_content-form textarea {
+textarea {
     margin-top: .4rem;
+    height: 200px;
+    width: 600px;
 }
 
 button {

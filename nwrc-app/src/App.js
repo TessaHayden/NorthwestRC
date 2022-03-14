@@ -1,5 +1,4 @@
 import React from "react";
-
 import { About, Header, Footer, Gallery, Services, Contact } from "./container";
 import { Navbar } from "./components";
 import "./App.css";

@@ -1,4 +1,13 @@
+.app__wrapper_img img {
+display: flex;
+}
 
+@media screen and (max-width: 2000px) {
+    .app__wrapper_img img{
+        width: 350px;
+        height: 390px;
+    }
+}
 
 @media screen and (max-width: 280px) {
     .app__wrapper {

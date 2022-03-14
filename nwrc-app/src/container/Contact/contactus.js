@@ -45,7 +45,7 @@ const ContactUs = () => {
           </div>
           <div className="app__wrapper_content-form">
             <form onSubmit={handleSubmit}>
-              <div>
+              <div className="p__cormorant">
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" required />
               </div>
