@@ -2,6 +2,13 @@
     margin: 1rem;
 }
 
+.app__wrapper_subhead p {
+    font-size: 23px;
+}
+.app__wrapper_subhead img {
+    width: 50%;
+}
+
 label {
     display: flex;
     justify-content: flex-start;
@@ -38,4 +45,18 @@ button {
 
 .app__wrapper-content p {
     padding-left: .9em;
+}
+
+
+@media screen and (max-width: 550px) {
+    textarea {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    textarea {
+        width: 200px;
+
+    }
 }

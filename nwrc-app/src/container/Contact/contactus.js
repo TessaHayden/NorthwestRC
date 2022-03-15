@@ -28,21 +28,13 @@ const ContactUs = () => {
     return (
       <div className="app__bg app__wrapper section__padding" id="contact">
         <div className="app__wrapper_info">
-          <SubHeading title="Contact" />
+          <div className="app__wrapper_subhead">
+            <SubHeading className="subheading-contact" title="Contact" />
+          </div>
           <h1 className="headtext__cormorant" style={{ marginBottom: "3rem" }}>
             Send a message
           </h1>
-          <div className="app__wrapper-content">
-            <p className="p__opensans">
-              <a
-                role="button"
-                className="btn btn-link a-link"
-                href="tel:+15033497151"
-              >
-                Call us today
-              </a>
-            </p>
-          </div>
+
           <div className="app__wrapper_content-form">
             <form onSubmit={handleSubmit}>
               <div className="p__cormorant">

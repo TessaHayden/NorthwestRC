@@ -23,7 +23,7 @@ function AboutUs() {
             friendly Northwest Restaurant Consultant comes in to help prepare
             and navigate you on your journey.
           </p>
-          <p className="p__opensans" style={{margin: ".7rem"}}>
+          <p className="p__opensans center_p" style={{margin: ".7rem"}}>
             When you've decided it's time to make your dreams a reality,
             <br />
             <a
@@ -34,7 +34,7 @@ function AboutUs() {
               Call Bill Hayden
             </a>
           </p>
-          <p className="p__opensans" style={{textAlign: "center"}}>
+          <p className="p__cormorant" style={{textAlign: "center"}}>
             His passion and enthusiasm for your success will guide you through
             the process to success!
           </p>

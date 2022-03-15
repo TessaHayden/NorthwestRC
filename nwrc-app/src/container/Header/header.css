@@ -3,3 +3,21 @@
   margin-top: 4rem;
 }
 
+@media screen and (max-width: 1150px) {
+  .app__wrapper_img img {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .app__wrapper_img img {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .app__wrapper_img img {
+    height: 220px;
+  }
+}

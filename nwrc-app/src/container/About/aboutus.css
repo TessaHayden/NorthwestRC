@@ -14,7 +14,9 @@
   width: 30%;
 }
 
-
+.center_p {
+  text-align: center;
+}
 @media screen and (max-width: 2000px) {
   .app__aboutus-overlay {
     justify-content: flex-start;
@@ -27,14 +29,20 @@
 }
 
 @media screen and (max-width: 850px) {
+  .app__aboutus-content-about img {
+    width: 50%;
+  }
   .app__aboutus-overlay img {
     width: 70%;
     height: 70%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .app__aboutus-overlay img {
     width: 60%;
+  }
+  .app__aboutus-content-about img {
+    width: 65%;
   }
 }
 

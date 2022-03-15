@@ -4,8 +4,18 @@ display: flex;
 
 @media screen and (max-width: 2000px) {
     .app__wrapper_img img{
-        width: 350px;
-        height: 390px;
+        width: 425px;
+        height: 520px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .app__wrapper_img img {
+        height: 280px;
+    }
+    .app__wrapper_services img {
+        width: 80%;
     }
 }
 
@@ -21,5 +31,8 @@ display: flex;
     .app__wrapper_services img {
         margin-top: 0;
         width: 95%;
+    }
+    .app__wrapper_img img{
+        height: 90%;
     }
 }

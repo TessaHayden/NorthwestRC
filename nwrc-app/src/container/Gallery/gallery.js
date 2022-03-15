@@ -6,13 +6,48 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 const Gallery = () => {
   const imageList = [
     images.defuegoRestaurant,
-    images.defuegoRestaurantWhiskey,
     images.defuegofRestaurantPool,
     images.defuegoFood,
     images.defuegofFoodLunch,
     images.defuegoBrunch,
     images.defuegoFoodSalmon,
     images.defuegoDrink,
+    images.haydensRestaurant,
+    images.haydensRestaurantLake,
+    images.haydensRestaurantLittle,
+    images.lechonRestaurant,
+    images.lechonRestaurantOutside,
+    images.lechonFoodBurger,
+    images.lechonFoodOutside,
+    images.shigezoRestaurantOutside,
+    images.shigezoRestaurantInside,
+    images.shigezoRestaurant,
+    images.shigezoFoodSushi,
+    images.shigezoFoodBeef,
+    images.shigezoFoodIzakaya,
+    images.southparkRestaurantBar,
+    images.southparkRestaurantBarBottles,
+    images.southparkRestaurant,
+    images.southparkRestaurantSeafood,
+    images.southparkFood,
+    images.southparkFoodSpread,
+    images.southparkFoodStew,
+    images.southparkDrink,
+    images.stonecliffRestaurant,
+    images.stonecliffRestaurantPatio,
+    images.stonecliffRestaurantBar,
+    images.stonecliffRestaurantDiners,
+    images.stonecliffRestaurantUpstairs,
+    images.stonecliffFoodFish,
+    images.stonecliffFoodPlate,
+    images.stonecliffFoodDish,
+    images.stonecliffFoodPasta,
+    images.jellyfish,
+    images.jellyfishBar,
+    images.ernestosEvent,
+    images.wineryEvent,
+    images.champagne,
+    images.peopleDining,
   ];
   const [current, setCurrent] = useState(0);
   const length = imageList.length;
@@ -39,11 +74,11 @@ const Gallery = () => {
         />
       </div>
       <div className="panels" id="gallery">
-        <FaChevronLeft className="left-arrow" onClick={prevSlide} />
-        <FaChevronRight className="right-arrow" onClick={nextSlide} />
+        <FaChevronLeft className="arrows left-arrow" onClick={prevSlide} />
+        <FaChevronRight className="arrows right-arrow" onClick={nextSlide} />
         {imageList.map((slide, index) => {
           return (
-            <div key={index}>
+            <div className="image-slide" key={index}>
               {index === current && <img src={slide} alt="" />}
             </div>
           );
