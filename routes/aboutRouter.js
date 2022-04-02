@@ -1,15 +1,18 @@
 const express = require("express");
+const About = require('../models/about');
+
 const aboutRouter = express.Router();
 
 aboutRouter
   .route("/")
-  .all((req, res) => {
-    res.statusCode = 200;
-    res.setHeader = ("Content-type", "text/plain");
-    next();
-  })
-  .get((req, res) => {
-    res.end("About page");
+  .get((req, res, next) => {
+    About.find()
+      .then(about => {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        res.json(about);
+      })
+      .catch(err => next(err));
   })
   .post((req, res) => {
     res.statusCode = 403;
@@ -24,4 +27,4 @@ aboutRouter
     res.end(`${req.method} is not supported on /about`);
   });
 
-modules.exports = aboutRouter;
+module.exports = aboutRouter;
