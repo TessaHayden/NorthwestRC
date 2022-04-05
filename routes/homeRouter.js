@@ -15,7 +15,7 @@ homeRouter.route('/')
     })
     .post((req, res) => {
         res.statusCode = 403;
-        res.end('PUT operation not supported on /home');
+        res.end(`${req.method} operation not supported on /home`);
     })
     .put((req, res) => {
         res.statusCode = 403;
