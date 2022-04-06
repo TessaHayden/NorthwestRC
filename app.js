@@ -9,9 +9,9 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const homeRouter = require("./routes/homeRouter");
 const aboutRouter = require("./routes/aboutRouter");
-// const galleryRouter = require("./routes/galleryRouter");
-// const servicesRouter = require("./routes/servicesRouter");
-// const contactRouter = require("./routes/contactRouter");
+const galleryRouter = require("./routes/galleryRouter");
+const servicesRouter = require("./routes/servicesRouter");
+const contactRouter = require("./routes/contactRouter");
 
 const mongoose = require('mongoose');
 
@@ -46,9 +46,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/home", homeRouter);
 app.use("/about", aboutRouter);
-// app.use("/gallery", galleryRouter);
-// app.use("/services", servicesRouter);
-// app.use("/contact", contactRouter);
+app.use("/gallery", galleryRouter);
+app.use("/services", servicesRouter);
+app.use("/contact", contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

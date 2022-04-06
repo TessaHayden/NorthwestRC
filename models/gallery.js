@@ -20,6 +20,6 @@ const gallerySchema = new Schema(
     }
 )
 
-const Gallery = mongoose.Schema('Gallery', gallerySchema);
+const Gallery = mongoose.model('Gallery', gallerySchema);
 
 module.exports = Gallery;
