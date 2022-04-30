@@ -1,11 +1,5 @@
-import Navbar from './Navbar/Navbar';
-import EventCalendar from './Calendar/Calendar';
-import SubHeading from './SubHeading/subheading';
-import Panels from './Panels/panels';
+import Navbar from "./Navbar/Navbar";
+import SubHeading from "./SubHeading/subheading";
+import Panels from "./Panels/panels";
 
-export {
-    Navbar,
-    EventCalendar,
-    SubHeading,
-    Panels
-};
+export { Navbar, SubHeading, Panels };

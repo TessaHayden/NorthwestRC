@@ -49,6 +49,7 @@ import jellyfish from "../assets/jelly.jpeg";
 import jellyfishBar from "../assets/jellyfish.jpg";
 import ernestosEvent from "../assets/Ernestosevent.jpg";
 import wineryEvent from "../assets/eolaevent.jpg";
+import violetta from "../assets/ViolettaBurger.png";
 import champagne from "../assets/eoladrinks.jpg";
 import outsideEvent from "../assets/stonecliffevent.jpg";
 import peopleDining from "../assets/southparkpeopledining.jpeg";
@@ -108,6 +109,7 @@ const Images = {
     jellyfishBar,
     ernestosEvent,
     wineryEvent,
+    violetta,
     champagne,
     outsideEvent,
     peopleDining,

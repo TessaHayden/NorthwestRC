@@ -6,9 +6,11 @@ import './services.css'
 const Services = () => (
   <div className="app__wrapper section__padding" id="services">
     <div className="app__wrapper_services flex__center section__padding">
+      <div className="app__wrapper_subheading">
       <h1 className="headtext__cormorant">
         Services</h1>
-      <img src={images.arrow} alt="about__arrow" width="350" height="100" />
+      <img src={images.arrow} alt="about__arrow" width="350" height="50" />
+      </div>
       <div className="app__wrapper-content">
         <p className="p__opensans">Services provided:</p>
         <p
@@ -24,8 +26,8 @@ const Services = () => (
         </p>
       </div>
     </div>
-    <div className="app__wrapper_img">
-      <img src={images.outsideEvent} alt="outside event" />
+    <div className="app__wrapper_event">
+      <img src={images.outsideEvent} alt="outside event" width="600" height="401"/>
     </div>
   </div>
 );

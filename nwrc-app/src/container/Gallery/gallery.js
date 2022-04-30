@@ -62,27 +62,36 @@ const Gallery = () => {
   };
 
   return (
-    <div className="app__wrapper_gallery">
-      <div className="app__wrapper-subheading flex__center section__padding">
-        <h1 className="headtext__cormorant">Gallery</h1>
-        <img
-          src={images.arrow}
-          alt="about__arrow"
-          className="arrow__img"
-          width="350"
-          height="100"
-        />
-      </div>
-      <div className="panels" id="gallery">
-        <FaChevronLeft className="arrows left-arrow" onClick={prevSlide} />
-        <FaChevronRight className="arrows right-arrow" onClick={nextSlide} />
-        {imageList.map((slide, index) => {
-          return (
-            <div className="image-slide" key={index}>
-              {index === current && <img src={slide} alt="" />}
-            </div>
-          );
-        })}
+    <div
+      className="app__wrapper_gallery flex__center section__padding"
+      id="gallery"
+    >
+      <div className="app__wrapper_gallery flex__center section__padding">
+        <div className="app__wrapper-subheading">
+          <h1 className="headtext__cormorant">Gallery</h1>
+          <img
+            src={images.arrow}
+            alt="about__arrow"
+            className="arrow__img"
+            width="350"
+            height="50"
+          />
+        </div>
+        <div className="panels" id="gallery">
+          <div className="arrows">
+            <FaChevronLeft className="arrow left-arrow" onClick={prevSlide} />
+            <FaChevronRight className="arrow right-arrow" onClick={nextSlide} />
+          </div>
+          <div className="picture-slides">
+            {imageList.map((slide, index) => {
+              return (
+                <div className="image-slide" key={index}>
+                  {index === current && <img src={slide} alt="" />}
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

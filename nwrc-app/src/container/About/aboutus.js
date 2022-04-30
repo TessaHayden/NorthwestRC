@@ -5,12 +5,12 @@ import { images } from "../../constants";
 
 function AboutUs() {
   return (
-    <div className="app__aboutus flex__center section__padding" id="about">
+    <div className="app__wrapper_about flex__center section__padding" id="about">
       <div className="app__aboutus-content flex__center">
         <div className="app__aboutus-content-about">
           <h1 className="headtext__cormorant">About</h1>
           <img src={images.arrow} alt="about__arrow" className="arrow__img" />
-          <div className="app__aboutus-overlay flex__center">
+          <div className="app__aboutus-overlay">
             <img src={images.blueprint} alt="blueprint__design" width="500" height="400"/>
           </div>
           <p className="p__opensans">

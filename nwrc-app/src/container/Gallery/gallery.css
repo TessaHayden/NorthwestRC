@@ -1,5 +1,9 @@
+.app__wrapper-subheading {
+  margin: 0;
+}
+
 .panels img {
-  width: 830px;
+  width: 700px;
   height: 700px;
   object-fit: cover;
 }
@@ -7,6 +11,7 @@
 .panels {
   position: relative;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -14,14 +19,14 @@
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 150px;
+  right: 250px;
   font-size: 2rem;
 }
 
 .left-arrow {
   position: absolute;
   top: 50%;
-  left: 150px;
+  left: 250px;
   font-size: 2rem;
 }
 
@@ -32,7 +37,7 @@
 
 @media screen and (max-width: 1150px) {
   .panels img {
-    width: 600px;
+    width: 500px;
     height: 500px;
   }
   .right-arrow {
@@ -46,16 +51,19 @@
 
 @media screen and (max-width: 550px) {
   .panels img {
-    width: 290px;
+    margin: .7em;
+    width: 250px;
     height: 250px;
   }
 
   .right-arrow {
-    right: 10px;
+    right: 4px;
+    display: flex;
   }
 
   .left-arrow {
-    left: 10px;
+    left: 4px;
+    
   }
 
   .app__wrapper-subheading img {
@@ -71,7 +79,7 @@
   }
   .panels img {
     width: 200px;
-    height: 160px;
+    height: 200px;
     position: relative;
     object-fit: cover;
   }

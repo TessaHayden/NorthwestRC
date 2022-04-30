@@ -18,8 +18,8 @@ function Header() {
             losses.
           </p>
         </div>
-            <div className="app__wrapper_img">
-                <img src={images.defuegoRestaurantWhiskey} alt="header_img" />
+            <div className="app__wrapper_header">
+                <img src={images.defuegoRestaurantWhiskey} alt="header_img" width="348" height="348" />
             </div>    
       </div>
     );

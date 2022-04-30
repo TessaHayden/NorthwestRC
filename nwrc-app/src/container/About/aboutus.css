@@ -5,10 +5,14 @@
 .app__aboutus {
   margin-bottom: 5rem;
 }
+.app__aboutus-content-about img{
+  margin-bottom: 3em;
+}
 .app__aboutus-overlay img {
   display: flex;
   float: left;
-  margin: 0 1.7rem 0 0;
+  margin: 0 3rem 0 0;
+  box-shadow: .1rem .2rem .2rem .2rem rgba(26, 79, 158, 0.145);
 }
 .app__aboutus-content-about img {
   width: 30%;
@@ -37,21 +41,17 @@
     height: 70%;
   }
 }
-@media screen and (max-width: 550px) {
-  .app__aboutus-overlay img {
-    width: 60%;
-  }
-  .app__aboutus-content-about img {
-    width: 65%;
-  }
-}
 
-@media screen and (max-width: 280px) {
-  .app__aboutus-overlay img {
-    width: 40%;
-    height: 40%;
+@media screen and (max-width: 550px) {
+  .app__aboutus-content {
+    background-color: aqua;
   }
-  .app__aboutus-content-about img {
-    width: 80%;
+  .app__aboutus-overlay {
+    background-color: forestgreen;
+    padding: 5px;
+  }
+ 
+  .app__aboutus-overlay img {
+    float: none;
   }
 }
