@@ -3,16 +3,23 @@ const Schema = mongoose.Schema;
 
 const contactSchema = new Schema(
     {
-        title: {
+        firstname: {
             type: String,
-            required: true
+            required: [true, "Firstname is required"]
         },
-        description: {
+        lastname: {
             type: String,
-            required: true
+            required: [true, "Lastname is required"]
         },
-        image: {
+        phone: {
+            type: Number,
+        },
+        email: {
+            type: Number,
+        },
+        message: {
             type: String,
+            required: [true, "Please include message"]
         }
     },
     {

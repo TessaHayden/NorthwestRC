@@ -4,6 +4,7 @@ var path = require("path");
 var logger = require("morgan");
 const passport = require('passport');
 const config = require('./config');
+const bodyParser = require('body-parser');
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
@@ -35,20 +36,20 @@ app.set("view engine", "jade");
 
 app.use(logger("dev"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(passport.initialize());
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/contact", contactRouter);
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use('/public', express.static(path.join(__dirname, "public")));
 
 app.use("/home", homeRouter);
 app.use("/about", aboutRouter);
 app.use("/gallery", galleryRouter);
 app.use("/services", servicesRouter);
-app.use("/contact", contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
